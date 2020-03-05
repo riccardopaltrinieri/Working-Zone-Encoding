@@ -45,7 +45,7 @@ architecture Behavioral of project_reti_logiche is
     
     begin
     
-    CHANGE_STATE : process(i_start, i_rst, temp_done)
+    UPDATE_STATE : process(i_start, i_rst, temp_done)
     begin
         if( i_clk'event and i_clk = '1' ) then
             
@@ -76,11 +76,17 @@ architecture Behavioral of project_reti_logiche is
                 
             end if;
             
-            CS <= NS;
-            
         end if;
     end process;
     
+    CHANGE_STATE : process(CS)
+    begin
+    
+    if( i_clk'event and i_clk = '1' ) then
+        CS <= NS;
+    end if;
+    
+    end process;
     
     
     STATE_OPS : process(i_clk)
