@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar  4 09:44:43 2020
+# Process ID: 9560
+# Current directory: C:/Users/Alex/OneDrive - Politecnico di Milano/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8764 C:\Users\Alex\OneDrive - Politecnico di Milano\project\project.xpr
+# Log file: C:/Users/Alex/OneDrive - Politecnico di Milano/project/vivado.log
+# Journal file: C:/Users/Alex/OneDrive - Politecnico di Milano/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Alex/OneDrive - Politecnico di Milano/project/project.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+restart
+run 50 us
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
