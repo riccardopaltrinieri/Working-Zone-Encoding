@@ -22,13 +22,13 @@ create_project -in_memory -part xc7a200tfbg484-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Alex/OneDrive - Politecnico di Milano/project/project.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Alex/OneDrive - Politecnico di Milano/project/project.xpr} [current_project]
+set_property webtalk.parent_dir C:/Documenti/GitHub/project_reti_logiche/project/project.cache/wt [current_project]
+set_property parent.project_path C:/Documenti/GitHub/project_reti_logiche/project/project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/Alex/OneDrive - Politecnico di Milano/project/project.cache/ip} [current_project]
+set_property ip_output_repo c:/Documenti/GitHub/project_reti_logiche/project/project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib {{C:/Users/Alex/OneDrive - Politecnico di Milano/project/project.srcs/sources_1/new/project_reti_logiche.vhd}}
+read_vhdl -library xil_defaultlib C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

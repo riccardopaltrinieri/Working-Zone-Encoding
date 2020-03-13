@@ -41,7 +41,26 @@ architecture Behavioral of project_reti_logiche is
     
     signal CS : state := reset_state; -- CURRENT STATE
     signal NS : state := reset_state; -- NEXT STATE
+    
     signal temp_done : std_logic := '0';
+    signal temp_o_en : std_logic;
+    signal temp_o_we : std_logic;
+    signal temp_o_data : std_logic;
+    
+    signal temp_address : std_logic_vector(15 downto 0);
+    
+    signal ram_cell_1 : std_logic_vector(7 downto 0);
+    signal ram_cell_2 : std_logic_vector(7 downto 0);
+    signal ram_cell_3 : std_logic_vector(7 downto 0);
+    signal ram_cell_4 : std_logic_vector(7 downto 0);
+    signal ram_cell_5 : std_logic_vector(7 downto 0);
+    signal ram_cell_6 : std_logic_vector(7 downto 0);
+    signal ram_cell_7 : std_logic_vector(7 downto 0);
+    signal ram_cell_8 : std_logic_vector(7 downto 0);
+    signal ram_cell_9 : std_logic_vector(7 downto 0);
+    
+    signal counter : std_logic_vector(2 downto 0) := (others => '0');
+    
     
     begin
     
@@ -79,7 +98,21 @@ architecture Behavioral of project_reti_logiche is
         end if;
     end process;
     
-    CHANGE_STATE : process(CS)
+    
+    
+    RAM_STATE : process(i_data)
+    begin
+    
+    case counter is
+        when "000" =>
+        
+    end case;
+    
+    
+    
+    end process;
+    
+    CHANGE_STATE : process(NS)
     begin
     
     if( i_clk'event and i_clk = '1' ) then
@@ -89,7 +122,7 @@ architecture Behavioral of project_reti_logiche is
     end process;
     
     
-    STATE_OPS : process(i_clk)
+    STATE_OPS : process(CS)
     begin
     
     if( i_clk'event and i_clk = '1' ) then
@@ -100,6 +133,11 @@ architecture Behavioral of project_reti_logiche is
                     o_done <= '0';
                     o_en <= '0';
                     o_we <= '0';
+                    
+            when read_state =>
+                    
+                    o_en <= '1';                
+                    
                     
                     
             when write_state =>

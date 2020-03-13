@@ -1,0 +1,1228 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 10056
+License: Customer
+
+Current time: 	Fri Mar 13 18:44:48 CET 2020
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 22 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Alex
+User home directory: C:/Users/Alex
+User working directory: C:/Documenti/GitHub/project_reti_logiche/project
+User country: 	IT
+User language: 	it
+User locale: 	it_IT
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Alex/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Alex/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Alex/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Documenti/GitHub/project_reti_logiche/project/vivado.log
+Vivado journal file location: 	C:/Documenti/GitHub/project_reti_logiche/project/vivado.jou
+Engine tmp dir: 	C:/Documenti/GitHub/project_reti_logiche/project/.Xil/Vivado-10056-PC-AP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 517 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1055 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Documenti\GitHub\project_reti_logiche\project\project.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Documenti/GitHub/project_reti_logiche/project/project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Documenti/GitHub/project_reti_logiche/project/project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 541 MB. GUI used memory: 47 MB. Current time: 3/13/20, 6:44:52 PM CET
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+93820kb) [00:00:36]
+// [Engine Memory]: 586 MB (+463247kb) [00:00:36]
+// [GUI Memory]: 105 MB (+8789kb) [00:00:37]
+// [Engine Memory]: 621 MB (+6064kb) [00:00:39]
+// WARNING: HEventQueue.dispatchEvent() is taking  8587 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1514 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 652 MB. GUI used memory: 48 MB. Current time: 3/13/20, 6:45:08 PM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 681.336 ; gain = 122.488 
+// Project name: project; location: C:/Documenti/GitHub/project_reti_logiche/project; part: xc7a200tfbg484-1
+// [Engine Memory]: 656 MB (+3838kb) [00:00:45]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (project_reti_logiche.vhd) elapsed time: 0.3s
+// Elapsed time: 77 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche(Behavioral) (project_reti_logiche.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche(Behavioral) (project_reti_logiche.vhd)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 672 MB. GUI used memory: 50 MB. Current time: 3/13/20, 6:46:30 PM CET
+// Elapsed time: 346 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm (Q, F)
+// Elapsed time: 16 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "project_reti_logiche_2020"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 31 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+// [Engine Memory]: 690 MB (+918kb) [00:08:27]
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche(Behavioral) (project_reti_logiche.vhd)]", 1, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (D, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche_2020(Behavioral) (project_reti_logiche_2020.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche_2020(Behavioral) (project_reti_logiche_2020.vhd)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche.vhd", 1); // k (j, cp)
+typeControlKey((HResource) null, "project_reti_logiche.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_2020.vhd", 2); // k (j, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 229, 358); // cl (w, cp)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 309, 421); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 302, 437); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 348, 347); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 407, 388); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 75, 216); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 411, 196); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 419, 242); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 101, 202); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 76, 247); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 85, 251); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 310, 296); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 453, 407); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 455, 422); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 456, 447); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 460, 436); // cl (w, cp)
+floatView(PAResourceOtoP.PAViews_CODE, "project_reti_logiche_2020.vhd *"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "project_reti_logiche_2020.vhd *"); // ax (aI, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 130, 868); // cl (w, aK)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("project_reti_logiche_2020.vhd", 120, 379); // cl (w, aK)
+// [GUI Memory]: 116 MB (+6499kb) [00:11:20]
+// Elapsed time: 58 seconds
+selectCodeEditor("project_reti_logiche.vhd", 496, 344); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 765, 340); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 768, 328); // cl (w, aK)
+// Elapsed time: 223 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 55, 94); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'c'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 174, 504); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 175, 527); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 183, 521); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 194, 507); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 58, 517); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 57, 535); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 58, 553); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 55, 576); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 168, 505); // cl (w, aK)
+// Elapsed time: 13 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 210, 503); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 168, 521); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 167, 537); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 168, 553); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 166, 572); // cl (w, aK)
+// Elapsed time: 17 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 294, 572); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'c'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 166, 504); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 356, 569); // cl (w, aK)
+// Elapsed time: 98 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 27, 217); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 389, 684); // cl (w, aK)
+// Elapsed time: 28 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 324, 618); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 279, 616); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 327, 686); // cl (w, aK)
+// Elapsed time: 76 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 224, 707); // cl (w, aK)
+// Elapsed time: 15 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 224, 741); // cl (w, aK)
+// Elapsed time: 14 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 112, 126); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 99, 180); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 235, 181); // cl (w, aK)
+// Elapsed time: 18 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 288, 727); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 288, 737); // cl (w, aK)
+// Elapsed time: 31 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 230, 380); // cl (w, aK)
+// Elapsed time: 26 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 269, 300); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 238, 298); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 423, 476); // cl (w, aK)
+// Elapsed time: 39 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 326, 593); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 282, 554); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 286, 576); // cl (w, aK)
+// Elapsed time: 64 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 78, 247); // cl (w, aK)
+// Elapsed time: 63 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 1121, 384); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 1098, 469); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 1101, 478); // cl (w, aK)
+// Elapsed time: 24 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 991, 558); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 1006, 618); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 1014, 650); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 1014, 623); // cl (w, aK)
+// Elapsed time: 61 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 329, 398); // cl (w, aK)
+// Elapsed time: 32 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 301, 446); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 201, 372); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 217, 368); // cl (w, aK)
+// Elapsed time: 33 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 257, 470); // cl (w, aK)
+// Elapsed time: 77 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 587, 355); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 529, 349); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 677, 351); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 620, 353); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 602, 614); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 619, 639); // cl (w, aK)
+// Elapsed time: 47 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 421, 544); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 424, 557); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 429, 575); // cl (w, aK)
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 53 MB. Current time: 3/13/20, 7:16:31 PM CET
+// Elapsed time: 260 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 321, 349); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 523, 334); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 253, 351); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 312, 348); // cl (w, aK)
+// Elapsed time: 55 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 340, 728); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 205, 305); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 214, 313); // cl (w, aK)
+// Elapsed time: 153 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 184, 457); // cl (w, aK)
+// Elapsed time: 284 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 378, 489); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 394, 501); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 386, 755); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 398, 739); // cl (w, aK)
+// Elapsed time: 109 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 305, 233); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 338, 693); // cl (w, aK)
+// Elapsed time: 17 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 250, 689); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 289, 687); // cl (w, aK)
+// Elapsed time: 30 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 278, 693); // cl (w, aK)
+// Elapsed time: 13 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 309, 691); // cl (w, aK)
+// Elapsed time: 28 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 334, 438); // cl (w, aK)
+// Elapsed time: 20 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 245, 143); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 182, 407); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 192, 422); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 193, 409); // cl (w, aK)
+// Elapsed time: 33 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 111, 409); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 105, 413); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 120, 407); // cl (w, aK)
+// Elapsed time: 24 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 329, 421); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 138, 432); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 186, 419); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 265, 414); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 418, 450); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 426, 502); // cl (w, aK)
+// Elapsed time: 18 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 281, 145); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 281, 145, false, false, false, false, true); // cl (w, aK) - Double Click
+selectCodeEditor("project_reti_logiche_2020.vhd", 281, 418); // cl (w, aK)
+// Elapsed time: 10 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 338, 483); // cl (w, aK)
+// Elapsed time: 59 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 332, 625); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'c'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 280, 638); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 231, 504); // cl (w, aK)
+// Elapsed time: 25 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 317, 895); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 265, 515); // cl (w, aK)
+// Elapsed time: 21 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 387, 411); // cl (w, aK)
+// Elapsed time: 49 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 251, 605); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 250, 657); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 251, 704); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 251, 757); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 251, 810); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 343, 435); // cl (w, aK)
+// Elapsed time: 34 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 446, 484); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'c'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 413, 530); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 411, 604); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 390, 674); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 401, 739); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 423, 652); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 410, 732); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 413, 723); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 429, 791); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 402, 825); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 402, 820); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 193, 829); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 219, 827); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 219, 827, false, false, false, false, true); // cl (w, aK) - Double Click
+selectCodeEditor("project_reti_logiche_2020.vhd", 299, 824); // cl (w, aK)
+// Elapsed time: 11 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 245, 827); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 325, 417); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 330, 417); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 327, 485); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 330, 551); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 328, 620); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 327, 687); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 327, 758); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 407, 333); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 414, 334); // cl (w, aK)
+// Elapsed time: 70 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 411, 333); // cl (w, aK)
+// Elapsed time: 12 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 397, 472); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 404, 466); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 412, 537); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 411, 605); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 411, 671); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 409, 740); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 413, 738); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 410, 807); // cl (w, aK)
+// Elapsed time: 23 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 470, 738); // cl (w, aK)
+// Elapsed time: 10 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 481, 692); // cl (w, aK)
+// Elapsed time: 20 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 168, 690); // cl (w, aK)
+// Elapsed time: 29 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 328, 570); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 335, 588); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 257, 488); // cl (w, aK)
+// Elapsed time: 22 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 144, 436); // cl (w, aK)
+// Elapsed time: 32 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 264, 214); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 264, 286); // cl (w, aK)
+// Elapsed time: 14 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 203, 568); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 410, 471); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 390, 588); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 390, 571); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 389, 589); // cl (w, aK)
+// Elapsed time: 127 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 454, 497); // cl (w, aK)
+// Elapsed time: 57 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 1167, 514); // cl (w, aK)
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 48 MB. Current time: 3/13/20, 7:46:31 PM CET
+// Elapsed time: 18 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 338, 317); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 141, 109); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 141, 84); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 300, 179); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 139, 266); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 228, 242); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 219, 807); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 134, 244); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 110, 726); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 133, 861); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 181, 658); // cl (w, aK)
+// Elapsed time: 27 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 342, 726); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 396, 669); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 168, 676); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 232, 679); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 282, 730); // cl (w, aK)
+// Elapsed time: 177 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 660, 470); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 660, 470, false, false, false, false, true); // cl (w, aK) - Double Click
+selectCodeEditor("project_reti_logiche_2020.vhd", 660, 476); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 678, 604); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 679, 608); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 690, 623); // cl (w, aK)
+// Elapsed time: 47 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 320, 451); // cl (w, aK)
+// Elapsed time: 146 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 264, 461); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 263, 451); // cl (w, aK)
+// Elapsed time: 29 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 700, 379); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 294, 400); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 351, 401); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 584, 578); // cl (w, aK)
+// Elapsed time: 11 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 530, 456); // cl (w, aK)
+// Elapsed time: 135 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 568, 391); // cl (w, aK)
+// Elapsed time: 57 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 270, 554); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 272, 566); // cl (w, aK)
+// Elapsed time: 72 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 306, 539); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 269, 637); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 182, 482); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 676, 402); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 535, 402); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 304, 354); // cl (w, aK)
+// Elapsed time: 26 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 232, 354); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'c'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 269, 432); // cl (w, aK)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, aK)
+selectCodeEditor("project_reti_logiche_2020.vhd", 388, 309); // cl (w, aK)
+// Elapsed time: 61 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, aK)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dockFrame(PAResourceOtoP.PAViews_CODE, "project_reti_logiche_2020.vhd"); // ax (aI, aK)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "project_reti_logiche_2020.vhd"); // ax (aI, aK)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+// Elapsed time: 10 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 267, 349); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 168, 443); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (cp):  Run Simulation : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.3 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cee4ef4a03aa411da67c61dbdc6442ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd:109] ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit project_tb in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 714.066 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 20 seconds
+// Elapsed time: 14 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+// Elapsed time: 15 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 100, 65); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 234, 61); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 436, 66); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 560, 63); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 715, 67); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 819, 65); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 908, 65); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1045, 61); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1149, 60); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1216, 62); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1281, 64); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1336, 60); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1432, 60); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1477, 58); // dr (af, cp)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources]", 7); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, project_tb(projecttb) (tb_pfrl_2020_no_wz.vhd)]", 6); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+// Elapsed time: 101 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 86, 360); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 98, 349); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 464, 392); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 472, 381); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.3 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cee4ef4a03aa411da67c61dbdc6442ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration ERROR: [VRFC 10-664] expression has 15 elements ; expected 16 [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd:112] ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit project_tb in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 11 seconds
+// Elapsed time: 11 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (C, I)
+// a (cp): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// Elapsed time: 52 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 424, 162); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 335, 166); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 337, 228); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 337, 300); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 337, 366); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 337, 432); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 338, 245); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 338, 313); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 338, 385); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 280, 348); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 284, 351); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot project_tb_behav  ****** Webtalk v2018.3 (64-bit)   **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-206] Exiting Webtalk at Fri Mar 13 20:08:59 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 720.965 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (project_reti_logiche_2020.vhd) elapsed time: 0.3s
+// WARNING: HEventQueue.dispatchEvent() is taking  1818 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 56 MB. Current time: 3/13/20, 8:09:04 PM CET
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 762.027 ; gain = 41.063 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 762.027 ; gain = 41.063 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aI (aF, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 56 MB. Current time: 3/13/20, 8:09:28 PM CET
+// Elapsed time: 10 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 14 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, project_tb(projecttb) (tb_pfrl_2020_no_wz.vhd)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, project_tb(projecttb) (tb_pfrl_2020_no_wz.vhd)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pfrl_2020_no_wz.vhd", 3); // k (j, cp)
+// Waveform: addNotify
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_2020.vhd", 1); // k (j, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 432, 261); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 432, 244); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pfrl_2020_no_wz.vhd", 2); // k (j, cp)
+selectCodeEditor("tb_pfrl_2020_no_wz.vhd", 327, 318); // cl (w, cp)
+typeControlKey((HResource) null, "tb_pfrl_2020_no_wz.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_2020.vhd", 1); // k (j, cp)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 273, 265); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 417, 264); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 416, 306); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 415, 264); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pfrl_2020_no_wz.vhd", 2); // k (j, cp)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_2020.vhd", 1); // k (j, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 279, 268); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 431, 266); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 507, 264); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 316, 264); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 274, 264); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 275, 268); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 274, 260); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 278, 266); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 337, 263); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bx (cp):  Close : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (C, I)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cp):  Run Simulation : addNotify
+dismissDialog("Close"); // bx (cp)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 58 MB. Current time: 3/13/20, 8:13:04 PM CET
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 762.027 ; gain = 0.000 
+// 'd' command handler elapsed time: 16 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 58 MB. Current time: 3/13/20, 8:13:09 PM CET
+// Elapsed time: 53 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 17 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 60 MB. Current time: 3/13/20, 8:14:15 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, c_CLOCK_PERIOD]", 9, false, false, false, false, true, false); // a (r, cp) - Popup Trigger
+// Elapsed time: 28 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, tb_rst]", 2, false, false, false, false, true, false); // a (r, cp) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pfrl_2020_no_wz.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 3); // k (j, cp)
+// Elapsed time: 12 seconds
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, mem_o_data[7:0]]", 5); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 61 MB. Current time: 3/13/20, 8:15:50 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, mem_i_data[7:0]]", 14); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, mem_address[15:0]]", 1); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, mem_address[15:0]]", 1); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 60 MB. Current time: 3/13/20, 8:16:00 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, mem_o_data[7:0]]", 5); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, mem_i_data[7:0]]", 6); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, mem_we]", 8, false); // a (r, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 61 MB. Current time: 3/13/20, 8:16:09 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HEventQueue.dispatchEvent() is taking  2435241 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 53 MB. Current time: 3/13/20, 9:08:05 PM CET
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2053 ms. Increasing delay to 6159 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2058 ms. Increasing delay to 3000 ms.
+// Elapsed time: 3295 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pfrl_2020_no_wz.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_2020.vhd", 1); // k (j, cp)
+// TclEventType: SIMULATION_ADD_BREAKPOINT
+// Tcl Message: add_bp {C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd} 156 
+// TclEventType: SIMULATION_DELETE_BREAKPOINT
+// Tcl Message: remove_bps -file {C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd} -line 156 
+// TclEventType: SIMULATION_ADD_BREAKPOINT
+// Tcl Message: add_bp {C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd} 156 
+// Elapsed time: 16 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// bx (cp):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+dismissDialog("Restart"); // bx (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 10 us 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_2020.vhd", 1); // k (j, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 238, 423, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_DIFF_WITH, "Diff with"); // X (al, Popup.HeavyWeightWindow)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // X (al, Popup.HeavyWeightWindow)
+selectCodeEditor("project_reti_logiche_2020.vhd", 155, 422); // cl (w, cp)
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+closeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // ax (aI, cp)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 3); // k (j, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 59 MB. Current time: 3/13/20, 9:12:10 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTableHeader(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Name", 0); // m (c, cp)
+selectButton((HResource) null, "Objects_settings"); // u (f, cp): TRUE
+selectButton((HResource) null, "Objects_settings"); // u (f, cp): FALSE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Mar 13 21:12:30 2020] Launched synth_1... Run output will be captured here: C:/Documenti/GitHub/project_reti_logiche/project/project.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 690 MB. GUI used memory: 60 MB. Current time: 3/13/20, 9:12:42 PM CET
+// TclEventType: RUN_FAILED
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_2020.vhd", 1); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: SIMULATION_DELETE_BREAKPOINT
+// Tcl Message: remove_bps -file {C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd} -line 156 
+// Elapsed time: 11 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 250, 164); // cl (w, cp)
+// Elapsed time: 64 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2); // ah (Q, cp)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2); // ah (Q, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 362, 120); // n (q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, true, false, false, false, false, true); // ah (Q, cp) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, true, false, false, false, false, true); // ah (Q, cp) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. , [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. , [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. , [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. , [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. , [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3, false, false, false, false, true, false); // ah (Q, cp) - Popup Trigger
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. , [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 3, false); // ah (Q, cp)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aR, cp): TRUE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, true); // g (aR, cp): TRUE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aR, cp): FALSE
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Mar 13 21:16:07 2020] Launched synth_1... Run output will be captured here: C:/Documenti/GitHub/project_reti_logiche/project/project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("project_reti_logiche_2020.vhd", 226, 264); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 211, 114); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 211, 114, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 99, 113); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 76, 112); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 97, 264); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 208, 267); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 201, 267); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 117, 102); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 117, 92); // cl (w, cp)
+typeControlKey((HResource) null, "project_reti_logiche_2020.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 56, 110); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 262, 98); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 190, 404); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("project_reti_logiche_2020.vhd", 213, 93); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] else clause after check for clock not supported [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd:80]. ]", 5, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] else clause after check for clock not supported [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd:80]. ]", 5, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'project_reti_logiche' [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd:38]. ]", 6, false); // ah (Q, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 189, 265); // cl (w, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 163, 469); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 124 MB (+1478kb) [02:33:50]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// HOptionPane Error: 'There are no HDL sources in file set 'sources_1'. Please use the Add Sources command. (Run Synthesis)'
+// 'k' command handler elapsed time: 6 seconds
+selectButton("PAResourceOtoP.PABaseTab_THERE_NO_SOURCES_DEFINED_IN_OK", "OK"); // JButton (C, I)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+selectCodeEditor("project_reti_logiche_2020.vhd", 48, 124); // cl (w, cp)
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cp)
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, project_reti_logiche_2020.vhd]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, project_reti_logiche_2020.vhd]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - project_tb", "DesignTask.SIMULATION");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bx (cp)
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cQ, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 229, 125); // dr (af, cp)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 303, 115); // dr (af, cp)
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "close synth_1", true); // aC (Z, cp)
+// Tcl Command: 'close synth_1'
+// Tcl Command: 'close synth_1'
+// Tcl Message: close synth_1 
+// Tcl Message: can not find channel named "synth_1" 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm (Q, F)
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "project_reti_logiche_2020"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: 'Create Source File'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (C, J)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "project_reti_logiche_1"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 41 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_1.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_1.vhd 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, project_reti_logiche_2020.vhd]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", false); // g (Q, aE): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche_1(Behavioral) (project_reti_logiche_1.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche_1(Behavioral) (project_reti_logiche_1.vhd)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche_1(Behavioral) (project_reti_logiche_1.vhd)]", 1, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_1.vhd", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche_1(Behavioral) (project_reti_logiche_1.vhd)]", 1, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_1.vhd", 0); // k (j, cp)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_1.vhd", 0, true, false); // k (j, cp) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche_1.vhd", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche_1(Behavioral) (project_reti_logiche_1.vhd)]", 1, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_1.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_1.vhd 
+// Tcl Message: file delete -force C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_1.vhd 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "project_reti_logiche_2020"); // Y (Q, F)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: 'Create Source File'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (C, J)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "project_reti_logiche_2"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 26 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pfrl_2020_no_wz.vhd", 1); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, project_reti_logiche.vhd]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, project_reti_logiche.vhd]", 3, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+dismissFileChooser();
+// 'dI' command handler elapsed time: 5 seconds
