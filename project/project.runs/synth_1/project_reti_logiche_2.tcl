@@ -28,7 +28,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Documenti/GitHub/project_reti_logiche/project/project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2020.vhd
+read_vhdl -library xil_defaultlib C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -40,12 +40,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top project_reti_logiche -part xc7a200tfbg484-1
+synth_design -top project_reti_logiche_2 -part xc7a200tfbg484-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef project_reti_logiche.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file project_reti_logiche_utilization_synth.rpt -pb project_reti_logiche_utilization_synth.pb"
+write_checkpoint -force -noxdef project_reti_logiche_2.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file project_reti_logiche_2_utilization_synth.rpt -pb project_reti_logiche_2_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
