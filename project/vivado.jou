@@ -665,3 +665,284 @@ step
 step
 close_sim
 close_design
+launch_simulation
+source project_tb.tcl
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+step
+step
+step
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/o_address}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_0}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_1}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_2}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_3}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_4}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_5}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_6}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_7}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/ram_cell_8}} 
+current_wave_config {Untitled 16}
+add_wave {{/project_tb/UUT/counter}} 
+restart
+run 1200 ns
+run 100 ns
+restart
+run 1000 ns
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+source project_tb.tcl
+step
+step
+step
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_0}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_1}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_2}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_3}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_4}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_5}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_6}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_7}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/ram_cell_8}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/counter}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/temp_o_done}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/NS}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/CS}} 
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/o_address}} 
+restart
+run 1000 ns
+step
+step
+step
+current_wave_config {Untitled 17}
+add_wave {{/project_tb/UUT/i_data}} 
+restart
+run 1500 ns
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+close_sim

@@ -123,7 +123,7 @@ begin
                             when "0011" =>
                                 ram_cell_2      <= i_data;
                                 o_address    <= "0000000000000100";
-                                counter         <= "0011";
+                                counter         <= "0100";
                             when "0100" =>
                                 ram_cell_3      <= i_data;
                                 o_address    <= "0000000000000101";
