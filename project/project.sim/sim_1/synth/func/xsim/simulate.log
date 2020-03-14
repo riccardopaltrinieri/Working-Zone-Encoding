@@ -1,0 +1,5 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Failure: Simulation Ended!, TEST PASSATO
+Time: 3550100 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/Alex/OneDrive - Politecnico di Milano/Università/PoliDesk/Progetto Reti Logiche/tb_pfrl_2020_in_wz.vhd
+$finish called at time : 3550100 ps : File "C:/Users/Alex/OneDrive - Politecnico di Milano/Università/PoliDesk/Progetto Reti Logiche/tb_pfrl_2020_in_wz.vhd" Line 104

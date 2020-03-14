@@ -178,10 +178,13 @@ begin
                 
                 when compute_state =>
                     
+                        if( conv_integer(address) > conv_integer(ram(i))) then
+                            offset  <= abs(conv_integer(address) - conv_integer(ram(i)));
+                        else
+                            offset  <= 5;
+                        end if;
                         
-                        offset  <= (conv_integer(address) - conv_integer(ram(i)));
-                        
-                        if( i > 0 ) then
+                        if( i > 0 and i < 9) then
                         
                             if( offset < 4 ) then
                                 wz_bit          <= '1';
@@ -203,9 +206,9 @@ begin
                             
                         end if;
                         
-                        if( i = 8 ) then 
+                        if( i = 9 ) then 
                         
-                            if ( wz_bit = '1' ) then 
+                            if( wz_bit = '1' ) then 
                                 coded_address   <= wz_bit & wz_num & wz_offset;
                             else
                                 coded_address   <= wz_bit & address;
@@ -214,7 +217,9 @@ begin
                             
                         end if;
                         
-                        i <= i+1;
+                        if( i < 9 ) then
+                            i <= i+1;
+                        end if;
                     
                 when write_state =>
                 

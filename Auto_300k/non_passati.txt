@@ -1,0 +1,2 @@
+2) NON PASSATO con risultato 102 - Secondo start, per riferimento primo start guardare test 1
+3) NON PASSATO con risultato 33 - Test reset asincrono dopo 4 clk
