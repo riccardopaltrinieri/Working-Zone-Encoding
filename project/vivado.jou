@@ -946,3 +946,16 @@ step
 step
 step
 close_sim
+set_property is_enabled true [get_files  C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source project_tb.tcl
+run 1500 ns
+run 1500 ns
+close_sim
+update_compile_order -fileset sources_1
