@@ -18,8 +18,9 @@
 -- 
 ----------------------------------------------------------------------------------
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_1164.ALL;
+use IEEE.numeric_std.ALL;
+use ieee.std_logic_unsigned.all;
 
 entity project_reti_logiche is
     port (
@@ -39,8 +40,8 @@ end project_reti_logiche;
 
 architecture Behavioral of project_reti_logiche is
 
-    type state is (reset_state, read_state, compute_state, write_state, done_state, idle_state);
-    type ram_type is array (72 downto 0) of std_logic_vector(7 downto 0);
+    type state is (reset_state, read_state, compute_state, write_state, done1_state, done2_state, idle_state);
+    type ram_type is array (9 downto 0) of std_logic_vector(7 downto 0);
     
     signal CS, NS :         state := reset_state; -- NEXT STATE
     
@@ -69,7 +70,9 @@ architecture Behavioral of project_reti_logiche is
 --    signal ram_cell_7    :     std_logic_vector(7 downto 0);
 --    signal ram_cell_8    :     std_logic_vector(7 downto 0);
     
-    signal counter : std_logic_vector(3 downto 0) := (others => '0');
+    signal counter : std_logic_vector(3 downto 0) := "0000";
+    signal i       : integer := 0;
+    signal offset  : integer;
 
 ----------------------------------------------------------------------------------
 
@@ -132,9 +135,9 @@ begin
                             when "0010" =>
 --                              ram_cell_1      <= i_data;
                                 ram(1)          <= i_data;
-                                o_ad2ress       <= "0000000000000011";
-                                coun2er         <= "0011";
-                            when "0021" =>
+                                o_address       <= "0000000000000011";
+                                counter         <= "0011";
+                            when "0011" =>
 --                              ram_2ell_2      <= i_data;
                                 ram(2)          <= i_data;
                                 o_address       <= "0000000000000100";
@@ -175,34 +178,48 @@ begin
                 
                 when compute_state =>
                     
-                        for i in (0 to 7) loop
                         
-                            offset  <= (to_integer(ram(i)) rem to_integer(ram(8)));
-                            
+                        offset  <= abs((conv_integer(address) - conv_integer(ram(i))));
+                        
+                        if( i > 0 ) then
+                        
                             if( offset < 4 ) then
-                            
                                 wz_bit          <= '1';
-                                wz_num          <= '000'
-                                with offset select
-                                    wz_offset <= "0001" when "00",
-                                    wz_offset <= "0010" when "01",
-                                    wz_offset <= "0100" when "10",
-                                    wz_offset <= "1000" when "11";
-                                coded_address   <= wz_bit & wz_num & wz_offset;
-                            
+                                wz_num          <= std_logic_vector(to_unsigned(i-1,3));
+                                
+                                case to_unsigned(offset, 2) is
+                                    when "00" =>
+                                        wz_offset <= "0001";
+                                    when "01" =>
+                                        wz_offset <= "0010";
+                                    when "10" =>
+                                        wz_offset <= "0100";
+                                    when "11" =>
+                                        wz_offset <= "1000";
+                                end case;
                             else
-                            
-                                wz_bit          <= '0';
-                                coded_address   <= wz_bit & address;
-                            
+                                wz_bit          <= wz_bit;
                             end if;
                             
-                        end loop;
+                        end if;
+                        
+                        if( i >= 8 ) then 
+                        
+                            if ( wz_bit = '1' ) then 
+                                coded_address   <= wz_bit & wz_num & wz_offset;
+                            else
+                                coded_address   <= wz_bit & address;
+                            end if;
+                            NS <= write_state;
+                            
+                        end if;
+                        
+                        i <= i+1;
                     
                 when write_state =>
                 
                         o_address    <= "0000000000001001";
-                        temp_o_data     <= "00101011";
+                        temp_o_data     <= coded_address;
                         temp_o_we       <= '1';
                         NS              <= done1_state;
                      
