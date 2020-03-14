@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log project_reti_logiche_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche_2.tcl
+    with args -log project_reti_logiche.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche.tcl
 
 
 ****** Vivado v2018.3 (64-bit)
@@ -8,64 +8,70 @@
   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
-source project_reti_logiche_2.tcl -notrace
-Command: synth_design -top project_reti_logiche_2 -part xc7a200tfbg484-1
+source project_reti_logiche.tcl -notrace
+Command: synth_design -top project_reti_logiche -part xc7a200tfbg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12808 
+INFO: Helper process launched with PID 6204 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 362.875 ; gain = 101.023
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 363.598 ; gain = 101.359
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'project_reti_logiche_2' [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:38]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_0_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:116]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_1_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:120]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_2_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:124]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_3_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:128]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_4_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:132]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_5_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:136]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_6_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:140]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_7_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:144]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_8_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:147]
-INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche_2' (1#1) [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche_2.vhd:38]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[7]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[6]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[5]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[4]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[3]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[2]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[1]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[0]
+INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_0_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:116]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_1_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:120]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_2_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:124]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_3_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_4_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:132]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_5_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:136]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_6_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:140]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_7_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element ram_cell_8_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:38]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[7]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[6]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[5]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[4]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[3]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[2]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[1]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 419.473 ; gain = 157.621
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 419.676 ; gain = 157.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 419.473 ; gain = 157.621
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 419.676 ; gain = 157.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a200tfbg484-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 419.473 ; gain = 157.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 419.676 ; gain = 157.438
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'counter_reg' in module 'project_reti_logiche_2'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'counter_reg' in module 'project_reti_logiche'
 INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "o_address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                 iSTATE3 |                             0001 |                             0000
-                 iSTATE2 |                             0010 |                             0001
-                 iSTATE1 |                             0100 |                             0010
-                  iSTATE |                             1000 |                             0011
+                 iSTATE3 |                       0000000001 |                             0000
+                 iSTATE2 |                       0000000010 |                             0001
+                 iSTATE1 |                       0000000100 |                             0010
+                  iSTATE |                       0000001000 |                             0011
+                 iSTATE0 |                       0000010000 |                             0100
+                 iSTATE8 |                       0000100000 |                             0101
+                 iSTATE6 |                       0001000000 |                             0110
+                 iSTATE5 |                       0010000000 |                             0111
+                 iSTATE7 |                       0100000000 |                             1000
+                 iSTATE4 |                       1000000000 |                             1001
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'counter_reg' using encoding 'one-hot' in module 'project_reti_logiche_2'
+INFO: [Synth 8-3354] encoded FSM with state register 'counter_reg' using encoding 'one-hot' in module 'project_reti_logiche'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 419.473 ; gain = 157.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 419.676 ; gain = 157.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -84,12 +90,11 @@ Detailed RTL Component Info :
 	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	   4 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 1     
 	   7 Input     16 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 9     
-	   4 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -97,7 +102,7 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module project_reti_logiche_2 
+Module project_reti_logiche 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 1     
@@ -105,12 +110,11 @@ Detailed RTL Component Info :
 	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	   4 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 1     
 	   7 Input     16 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 9     
-	   4 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -128,26 +132,26 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[15] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[14] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[13] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[12] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[11] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[10] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[9] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[8] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[7] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[6] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[5] driven by constant 0
-WARNING: [Synth 8-3917] design project_reti_logiche_2 has port o_address[4] driven by constant 0
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[7]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[6]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[5]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[4]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[3]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[2]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[1]
-WARNING: [Synth 8-3331] design project_reti_logiche_2 has unconnected port i_data[0]
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[15] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[14] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[13] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[12] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[11] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[10] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[9] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[8] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[7] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[6] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[5] driven by constant 0
+WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[4] driven by constant 0
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[7]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[6]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[5]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[4]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[3]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[2]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[1]
+WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[0]
 INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[0]' (FDE) to 'temp_o_data_reg[5]'
 INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[1]' (FDE) to 'temp_o_data_reg[5]'
 INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[2]' (FDE) to 'temp_o_data_reg[7]'
@@ -162,7 +166,7 @@ INFO: [Synth 8-3886] merging instance 'o_data_reg[3]' (FDRE) to 'o_data_reg[5]'
 INFO: [Synth 8-3886] merging instance 'o_data_reg[4]' (FDRE) to 'o_data_reg[7]'
 INFO: [Synth 8-3886] merging instance 'o_data_reg[6]' (FDRE) to 'o_data_reg[7]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -175,7 +179,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -187,7 +191,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -211,7 +215,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -224,7 +228,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -236,25 +240,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -272,11 +276,11 @@ Report Cell Usage:
 +------+-----+------+
 |1     |BUFG |     1|
 |2     |LUT2 |     1|
-|3     |LUT3 |     3|
+|3     |LUT3 |     2|
 |4     |LUT4 |     6|
-|5     |LUT5 |     7|
-|6     |LUT6 |     1|
-|7     |FDRE |    22|
+|5     |LUT5 |     2|
+|6     |LUT6 |     9|
+|7     |FDRE |    28|
 |8     |IBUF |     3|
 |9     |OBUF |    27|
 +------+-----+------+
@@ -285,28 +289,28 @@ Report Instance Areas:
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    71|
+|1     |top      |       |    79|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.547 ; gain = 347.695
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 715.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 713.355 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 27 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 715.473 ; gain = 466.633
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 715.473 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 713.355 ; gain = 464.117
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 713.355 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Documenti/GitHub/project_reti_logiche/project/project.runs/synth_1/project_reti_logiche_2.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file project_reti_logiche_2_utilization_synth.rpt -pb project_reti_logiche_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 11:01:00 2020...
+INFO: [Common 17-1381] The checkpoint 'C:/Documenti/GitHub/project_reti_logiche/project/project.runs/synth_1/project_reti_logiche.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file project_reti_logiche_utilization_synth.rpt -pb project_reti_logiche_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 11:44:08 2020...
