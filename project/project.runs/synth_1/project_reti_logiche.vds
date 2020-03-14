@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Mar 14 11:43:42 2020
-# Process ID: 10304
+# Start of session at: Sat Mar 14 15:52:18 2020
+# Process ID: 4032
 # Current directory: C:/Documenti/GitHub/project_reti_logiche/project/project.runs/synth_1
 # Command line: vivado.exe -log project_reti_logiche.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche.tcl
 # Log file: C:/Documenti/GitHub/project_reti_logiche/project/project.runs/synth_1/project_reti_logiche.vds
@@ -15,47 +15,40 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6204 
+INFO: Helper process launched with PID 6108 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 363.598 ; gain = 101.359
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 362.613 ; gain = 100.813
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:38]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_0_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:116]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_1_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:120]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_2_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:124]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_3_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:128]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_4_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:132]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_5_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:136]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_6_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:140]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_7_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:144]
-WARNING: [Synth 8-6014] Unused sequential element ram_cell_8_reg was removed.  [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:147]
-INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:38]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[7]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[6]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[5]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[4]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[3]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[2]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[1]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[0]
+INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:41]
+WARNING: [Synth 8-3848] Net ram[9] in module/entity project_reti_logiche does not have driver. [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [C:/Documenti/GitHub/project_reti_logiche/project/project.srcs/sources_1/new/project_reti_logiche.vhd:41]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 419.676 ; gain = 157.438
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 418.613 ; gain = 156.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 419.676 ; gain = 157.438
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 418.613 ; gain = 156.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 419.676 ; gain = 157.438
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 418.613 ; gain = 156.813
+---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'counter_reg' in module 'project_reti_logiche'
-INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "o_address" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ram[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -72,7 +65,7 @@ INFO: [Synth 8-5544] ROM "o_address" won't be mapped to Block RAM because addres
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'counter_reg' using encoding 'one-hot' in module 'project_reti_logiche'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 419.676 ; gain = 157.438
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 418.613 ; gain = 156.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -85,17 +78,26 @@ No constraint files found.
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 6     
+	                8 Bit    Registers := 12    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
 +---Muxes : 
 	  10 Input     16 Bit        Muxes := 1     
-	   7 Input     16 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 9     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 22    
 	  10 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -105,17 +107,26 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module project_reti_logiche 
 Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
-	                8 Bit    Registers := 2     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 6     
+	                8 Bit    Registers := 12    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
 +---Muxes : 
 	  10 Input     16 Bit        Muxes := 1     
-	   7 Input     16 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 9     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 22    
 	  10 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -133,6 +144,7 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[15] driven by constant 0
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[14] driven by constant 0
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[13] driven by constant 0
@@ -145,29 +157,38 @@ WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[7] driven
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[6] driven by constant 0
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[5] driven by constant 0
 WARNING: [Synth 8-3917] design project_reti_logiche has port o_address[4] driven by constant 0
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[7]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[6]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[5]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[4]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[3]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[2]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[1]
-WARNING: [Synth 8-3331] design project_reti_logiche has unconnected port i_data[0]
-INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[0]' (FDE) to 'temp_o_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[1]' (FDE) to 'temp_o_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[2]' (FDE) to 'temp_o_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[3]' (FDE) to 'temp_o_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[4]' (FDE) to 'temp_o_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'temp_o_data_reg[6]' (FDE) to 'temp_o_data_reg[7]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\temp_o_data_reg[7] )
-INFO: [Synth 8-3886] merging instance 'o_data_reg[0]' (FDRE) to 'o_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'o_data_reg[1]' (FDRE) to 'o_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'o_data_reg[2]' (FDRE) to 'o_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'o_data_reg[3]' (FDRE) to 'o_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'o_data_reg[4]' (FDRE) to 'o_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'o_data_reg[6]' (FDRE) to 'o_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ram_reg[8][0]' (FDE) to 'address_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ram_reg[8][1]' (FDE) to 'address_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ram_reg[8][2]' (FDE) to 'address_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ram_reg[8][3]' (FDE) to 'address_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ram_reg[8][4]' (FDE) to 'address_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ram_reg[8][5]' (FDE) to 'address_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ram_reg[8][6]' (FDE) to 'address_reg[6]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[8]' (FDE) to 'offset_reg[9]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[9]' (FDE) to 'offset_reg[10]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[10]' (FDE) to 'offset_reg[11]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[11]' (FDE) to 'offset_reg[12]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[12]' (FDE) to 'offset_reg[13]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[13]' (FDE) to 'offset_reg[14]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[14]' (FDE) to 'offset_reg[15]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[15]' (FDE) to 'offset_reg[16]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[16]' (FDE) to 'offset_reg[17]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[17]' (FDE) to 'offset_reg[18]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[18]' (FDE) to 'offset_reg[19]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[19]' (FDE) to 'offset_reg[20]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[20]' (FDE) to 'offset_reg[21]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[21]' (FDE) to 'offset_reg[22]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[22]' (FDE) to 'offset_reg[23]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[23]' (FDE) to 'offset_reg[24]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[24]' (FDE) to 'offset_reg[25]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[25]' (FDE) to 'offset_reg[26]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[26]' (FDE) to 'offset_reg[27]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[27]' (FDE) to 'offset_reg[28]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[28]' (FDE) to 'offset_reg[29]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[29]' (FDE) to 'offset_reg[30]'
+INFO: [Synth 8-3886] merging instance 'offset_reg[30]' (FDE) to 'offset_reg[31]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 608.406 ; gain = 346.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -180,7 +201,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 608.406 ; gain = 346.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -192,7 +213,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -216,7 +237,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -229,7 +250,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,25 +262,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -272,46 +293,50 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT2 |     1|
-|3     |LUT3 |     2|
-|4     |LUT4 |     6|
-|5     |LUT5 |     2|
-|6     |LUT6 |     9|
-|7     |FDRE |    28|
-|8     |IBUF |     3|
-|9     |OBUF |    27|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    19|
+|3     |LUT1   |    14|
+|4     |LUT2   |    52|
+|5     |LUT3   |    11|
+|6     |LUT4   |    24|
+|7     |LUT5   |     7|
+|8     |LUT6   |    36|
+|9     |FDRE   |   171|
+|10    |IBUF   |    11|
+|11    |OBUF   |    27|
++------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    79|
+|1     |top      |       |   373|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 607.570 ; gain = 345.332
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 609.043 ; gain = 347.242
 INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 713.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 713.645 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-27 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 713.355 ; gain = 464.117
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 713.355 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 713.645 ; gain = 464.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 713.645 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Documenti/GitHub/project_reti_logiche/project/project.runs/synth_1/project_reti_logiche.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file project_reti_logiche_utilization_synth.rpt -pb project_reti_logiche_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 11:44:08 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 15:52:48 2020...

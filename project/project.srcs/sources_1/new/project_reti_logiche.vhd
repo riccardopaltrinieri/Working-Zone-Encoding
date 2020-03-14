@@ -51,7 +51,7 @@ architecture Behavioral of project_reti_logiche is
     signal temp_o_data   :     std_logic_vector(7 downto 0) := (others => '0');
 --  signal temp_address  :     std_logic_vector(15 downto 0) := (others => '0');
     
-    signal wz_bit        :     std_logic;
+    signal wz_bit        :     std_logic := '0';
     signal address       :     std_logic_vector(6 downto 0);
     signal wz_num        :     std_logic_vector(2 downto 0);
     signal wz_offset     :     std_logic_vector(3 downto 0);
@@ -72,7 +72,7 @@ architecture Behavioral of project_reti_logiche is
     
     signal counter : std_logic_vector(3 downto 0) := "0000";
     signal i       : integer := 0;
-    signal offset  : integer;
+    signal offset  : integer := 5;
 
 ----------------------------------------------------------------------------------
 
@@ -179,7 +179,7 @@ begin
                 when compute_state =>
                     
                         
-                        offset  <= abs((conv_integer(address) - conv_integer(ram(i))));
+                        offset  <= (conv_integer(address) - conv_integer(ram(i)));
                         
                         if( i > 0 ) then
                         
@@ -203,7 +203,7 @@ begin
                             
                         end if;
                         
-                        if( i >= 8 ) then 
+                        if( i = 8 ) then 
                         
                             if ( wz_bit = '1' ) then 
                                 coded_address   <= wz_bit & wz_num & wz_offset;
