@@ -75,6 +75,7 @@ architecture Behavioral of project_reti_logiche is
     signal offset  : integer := 5;
 
 ----------------------------------------------------------------------------------
+
 begin
 
     UPDATE_STATE : process(i_rst, NS, i_clk)
