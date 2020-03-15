@@ -15,6 +15,6 @@ codifica possono esistere multiple working-zone (Nwz).
 
 ---------------------------------------------------
 
-["Vivado Archive.zip"](../master/Vivado_Archive.zip) è il progetto di Vivado già funzionante e contenente i file necessari, per aprirlo correttamente fare doppio click su .\Vivado Archive.zip\project\project.xpr
+["Vivado Archive.zip"](../master/Vivado_Archive.zip) è il progetto di Vivado già funzionante e contenente i file necessari, per aprirlo correttamente fare doppio click su .\Vivado Archive.zip\project\project.xpr   
 Altrimenti è possibile creare un nuovo progetto su Vivado e inserire i file vhdl manualmente dalla cartella "VHDL Files" contenente il progetto da me sviluppato, i due testbench forniti dal professore e il testbench da utilizzare per i 300k test della cartella "Auto_300k"
 Per utilizzare quest'ultimo leggere il file README nella cartella stessa
