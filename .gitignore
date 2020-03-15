@@ -28,3 +28,8 @@ project/project.sim/sim_1/behav/xsim/project_tb_behav.wdb
 *.log
 *.str
 *.str
+*.wdf
+*.wpc
+*.xml
+*.xpr
+project/project.xpr
