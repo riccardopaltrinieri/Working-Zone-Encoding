@@ -12,3 +12,7 @@ intervalli (detti appunto working-zone). Una working-zone è definita come un in
 indirizzi di dimensione fissa (Dwz) che parte da un indirizzo base. All’interno dello schema di
 codifica possono esistere multiple working-zone (Nwz).   
 [Specifica completa e regole del progetto qui](../master/Specifica_e_Regole.pdf)
+
+"Vivado Archive.zip" è il progetto di Vivado già funzionante e contenente i file necessari, per aprirlo correttamente fare doppio click su .\Vivado Archive.zip\project\project.xpr
+Altrimenti è possibile creare un nuovo progetto su Vivado e inserire i file vhdl manualmente dalla cartella "VHDL Files" contenente il progetto da me sviluppato, i due testbench forniti dal professore e il testbench da utilizzare per i 300k test della cartella "Auto_300k"
+Per utilizzare quest'ultimo leggere il file README nella cartella stessa
