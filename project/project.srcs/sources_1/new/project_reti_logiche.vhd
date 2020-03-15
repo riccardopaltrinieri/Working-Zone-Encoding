@@ -75,7 +75,6 @@ architecture Behavioral of project_reti_logiche is
     signal offset  : integer := 5;
 
 ----------------------------------------------------------------------------------
-
 begin
 
     UPDATE_STATE : process(i_rst, NS, i_clk)
@@ -90,7 +89,7 @@ begin
                 o_we        <= '0';
                 CS          <= reset_state;
             
-            elsif( not( NS = CS )) then
+            elsif( not( NS = CS ) ) then
             
 --              o_address   <= temp_address;
                 o_data      <= temp_o_data;
@@ -98,14 +97,13 @@ begin
                 o_en        <= temp_o_en;
                 o_we        <= temp_o_we;
                 CS          <= NS;
-                
             end if;
         end if;
     end process;
     
     
             
-    STATE_OPS : process(CS, i_start, i_data, i_clk)
+    STATE_OPS : process(CS, i_start, i_clk)
     begin
     
         if( i_clk'event and i_clk = '1' ) then
@@ -115,6 +113,7 @@ begin
                     
                         if( i_start = '1' ) then
                             temp_o_en       <= '1';
+                            counter         <= "0000";
     --                      temp_address    <= (others => '0');
                             o_address       <= (others => '0');
                             NS              <= read_state;
@@ -122,11 +121,13 @@ begin
                         end if;
                 
                 when read_state =>
-                    
+                        
                         case counter is
                             when "0000" => 
-                                counter         <= "0001";
-                                o_address       <= "0000000000000001";
+                                if( NS = read_state ) then
+                                    counter         <= "0001";
+                                    o_address       <= "0000000000000001";
+                                end if;
                             when "0001" =>
 --                              ram_cell_0      <= i_data;
                                 ram(0)          <= i_data;
@@ -170,6 +171,7 @@ begin
 --                              ram_cell_8      <= i_data;
                                 ram(8)          <= i_data;
                                 address         <= i_data(6 downto 0);
+                                counter         <= "0000";
                                 NS              <= compute_state;
                             when others =>
                                 -- ERRORE
@@ -178,7 +180,7 @@ begin
                 
                 when compute_state =>
                     
-                        if( conv_integer(address) > conv_integer(ram(i))) then
+                        if( conv_integer(address) >= conv_integer(ram(i))) then
                             offset  <= abs(conv_integer(address) - conv_integer(ram(i)));
                         else
                             offset  <= 5;
@@ -223,15 +225,19 @@ begin
                     
                 when write_state =>
                 
-                        o_address    <= "0000000000001001";
+                        o_address       <= "0000000000001001";
                         temp_o_data     <= coded_address;
                         temp_o_we       <= '1';
+                        wz_bit          <= '0';
+                        wz_num          <= "000";
+                        wz_offset       <= "0000";
+                        i               <= 0;
                         NS              <= done1_state;
                      
                 when done1_state => 
                 
                         temp_o_done     <= '1';
-                        temp_o_en       <= '0';
+--                        temp_o_en       <= '0';
                         temp_o_we       <= '0';
                         NS              <= done2_state;
                 

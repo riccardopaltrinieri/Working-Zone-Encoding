@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar 14 17:20:22 2020
+| Date         : Sun Mar 15 12:51:18 2020
 | Host         : PC-AP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file project_reti_logiche_control_sets_placed.rpt
 | Design       : project_reti_logiche
@@ -23,7 +23,7 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    18 |
+| Number of unique control sets                            |    19 |
 | Unused register locations in slices containing registers |    22 |
 +----------------------------------------------------------+-------+
 
@@ -34,9 +34,9 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
+|      1 |            1 |
 |      4 |            1 |
-|      8 |           13 |
-|      9 |            1 |
+|      8 |           14 |
 |     10 |            1 |
 |     11 |            1 |
 |    16+ |            1 |
@@ -49,12 +49,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               9 |            3 |
+| No           | No                    | No                     |               8 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             150 |           44 |
+| Yes          | No                    | No                     |             151 |           50 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              11 |            3 |
+| Yes          | Yes                   | No                     |              11 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -64,23 +64,24 @@ Table of Contents
 +------------------+-------------------------------+------------------+------------------+----------------+
 |   Clock Signal   |         Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +------------------+-------------------------------+------------------+------------------+----------------+
+|  i_clk_IBUF_BUFG | temp_o_en_i_1_n_0             |                  |                1 |              1 |
 |  i_clk_IBUF_BUFG | o_address[3]_i_1_n_0          |                  |                2 |              4 |
-|  i_clk_IBUF_BUFG | address                       |                  |                2 |              8 |
-|  i_clk_IBUF_BUFG | coded_address[7]_i_1_n_0      |                  |                3 |              8 |
+|  i_clk_IBUF_BUFG |                               |                  |                2 |              8 |
+|  i_clk_IBUF_BUFG | address                       |                  |                3 |              8 |
+|  i_clk_IBUF_BUFG | coded_address[7]_i_1_n_0      |                  |                1 |              8 |
 |  i_clk_IBUF_BUFG | offset[7]_i_1_n_0             |                  |                2 |              8 |
-|  i_clk_IBUF_BUFG | ram[3][7]_i_1_n_0             |                  |                2 |              8 |
 |  i_clk_IBUF_BUFG | ram[4][7]_i_1_n_0             |                  |                2 |              8 |
-|  i_clk_IBUF_BUFG | ram[5][7]_i_1_n_0             |                  |                1 |              8 |
-|  i_clk_IBUF_BUFG | ram[1][7]_i_1_n_0             |                  |                3 |              8 |
-|  i_clk_IBUF_BUFG | ram[2][7]_i_1_n_0             |                  |                1 |              8 |
-|  i_clk_IBUF_BUFG | ram[0][7]_i_1_n_0             |                  |                1 |              8 |
-|  i_clk_IBUF_BUFG | temp_o_data[7]_i_1_n_0        |                  |                3 |              8 |
-|  i_clk_IBUF_BUFG | ram[6][7]_i_1_n_0             |                  |                5 |              8 |
-|  i_clk_IBUF_BUFG | ram[7][7]_i_1_n_0             |                  |                3 |              8 |
 |  i_clk_IBUF_BUFG | wz_offset[3]_i_1_n_0          |                  |                3 |              8 |
-|  i_clk_IBUF_BUFG |                               |                  |                3 |              9 |
-|  i_clk_IBUF_BUFG | FSM_onehot_counter[9]_i_1_n_0 |                  |                3 |             10 |
-|  i_clk_IBUF_BUFG | p_0_in                        | i_rst_IBUF       |                3 |             11 |
+|  i_clk_IBUF_BUFG | ram[2][7]_i_1_n_0             |                  |                3 |              8 |
+|  i_clk_IBUF_BUFG | ram[7][7]_i_1_n_0             |                  |                3 |              8 |
+|  i_clk_IBUF_BUFG | ram[5][7]_i_1_n_0             |                  |                2 |              8 |
+|  i_clk_IBUF_BUFG | ram[6][7]_i_1_n_0             |                  |                2 |              8 |
+|  i_clk_IBUF_BUFG | temp_o_data[7]_i_1_n_0        |                  |                2 |              8 |
+|  i_clk_IBUF_BUFG | ram[0][7]_i_1_n_0             |                  |                4 |              8 |
+|  i_clk_IBUF_BUFG | ram[1][7]_i_1_n_0             |                  |                4 |              8 |
+|  i_clk_IBUF_BUFG | ram[3][7]_i_1_n_0             |                  |                4 |              8 |
+|  i_clk_IBUF_BUFG | FSM_onehot_counter[9]_i_1_n_0 |                  |                4 |             10 |
+|  i_clk_IBUF_BUFG | p_0_in                        | i_rst_IBUF       |                4 |             11 |
 |  i_clk_IBUF_BUFG | i[0]_i_1_n_0                  |                  |                8 |             32 |
 +------------------+-------------------------------+------------------+------------------+----------------+
 

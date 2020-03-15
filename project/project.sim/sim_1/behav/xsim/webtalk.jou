@@ -2,8 +2,8 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Mar 13 20:12:55 2020
-# Process ID: 9380
+# Start of session at: Sun Mar 15 12:33:17 2020
+# Process ID: 9252
 # Current directory: C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Documenti/GitHub/project_reti_logiche/project/project.sim/sim_1/behav/xsim/webtalk.log

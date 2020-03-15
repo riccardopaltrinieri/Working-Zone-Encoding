@@ -60,8 +60,8 @@ void relocate(char *dp)
 	iki_vhdl_file_variable_register(dp + 1056320);
 	iki_vhdl_file_variable_register(dp + 1056376);
 	iki_vhdl_file_variable_register(dp + 1058800);
-	iki_vhdl_file_variable_register(dp + 1583296);
-	iki_vhdl_file_variable_register(dp + 1583384);
+	iki_vhdl_file_variable_register(dp + 1583320);
+	iki_vhdl_file_variable_register(dp + 1583424);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */

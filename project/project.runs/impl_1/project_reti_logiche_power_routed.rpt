@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat Mar 14 17:22:24 2020
+| Date             : Sun Mar 15 12:53:16 2020
 | Host             : PC-AP running 64-bit major release  (build 9200)
 | Command          : report_power -file project_reti_logiche_power_routed.rpt -pb project_reti_logiche_power_summary_routed.pb -rpx project_reti_logiche_power_routed.rpx
 | Design           : project_reti_logiche
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.209        |
+| Total On-Chip Power (W)  | 2.592        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.070        |
-| Device Static (W)        | 0.139        |
+| Dynamic (W)              | 2.451        |
+| Device Static (W)        | 0.141        |
 | Effective TJA (C/W)      | 2.5          |
-| Max Ambient (C)          | 79.5         |
-| Junction Temperature (C) | 30.5         |
+| Max Ambient (C)          | 78.6         |
+| Junction Temperature (C) | 31.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.070 |      373 |       --- |             --- |
-|   LUT as Logic |     0.043 |      140 |    133800 |            0.10 |
-|   CARRY4       |     0.017 |       21 |     33450 |            0.06 |
+| Slice Logic    |     0.102 |      373 |       --- |             --- |
+|   LUT as Logic |     0.071 |      137 |    133800 |            0.10 |
+|   CARRY4       |     0.019 |       21 |     33450 |            0.06 |
+|   Register     |     0.006 |      170 |    267600 |            0.06 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Register     |     0.004 |      170 |    267600 |            0.06 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.174 |      285 |       --- |             --- |
-| I/O            |     1.826 |       38 |       285 |           13.33 |
-| Static Power   |     0.139 |          |           |                 |
-| Total          |     2.209 |          |           |                 |
+| Signals        |     0.213 |      286 |       --- |             --- |
+| I/O            |     2.136 |       38 |       285 |           13.33 |
+| Static Power   |     0.141 |          |           |                 |
+| Total          |     2.592 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,11 +71,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.320 |       0.283 |      0.037 |
-| Vccaux    |       1.800 |     0.177 |       0.146 |      0.031 |
+| Vccint    |       1.000 |     0.393 |       0.355 |      0.039 |
+| Vccaux    |       1.800 |     0.203 |       0.172 |      0.031 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.851 |       0.846 |      0.005 |
+| Vcco18    |       1.800 |     0.998 |       0.993 |      0.005 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| project_reti_logiche |     2.070 |
+| project_reti_logiche |     2.451 |
 +----------------------+-----------+
 
 

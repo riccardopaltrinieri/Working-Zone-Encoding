@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar 14 17:22:24 2020
+| Date         : Sun Mar 15 12:53:17 2020
 | Host         : PC-AP running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file project_reti_logiche_timing_summary_routed.rpt -pb project_reti_logiche_timing_summary_routed.pb -rpx project_reti_logiche_timing_summary_routed.rpx -warn_on_violation
 | Design       : project_reti_logiche
@@ -67,7 +67,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 341 pins that are not constrained for maximum delay. (HIGH)
+ There are 343 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
