@@ -13,9 +13,9 @@ indirizzi di dimensione fissa (Dwz) che parte da un indirizzo base. All’intern
 codifica possono esistere multiple working-zone (Nwz).   
 [Specifica completa e regole del progetto qui](../master/src/Specifica_e_Regole.pdf)
 
-![alt text](../master/src/Behav_Simulation.jpg)   
-![alt text](../master/src/Schematic.jpg)   
-![alt text](../master/src/Implemented_Design.jpg)       
+![Behavioral Simulation](../master/src/images/Behav_Simulation.jpg)   
+![Schematic](../master/src/images/Schematic.jpg)   
+![Implemented Design](../master/src/images/Implemented_Design.jpg)       
 
 ---------------------------------------------------
 
