@@ -43,13 +43,14 @@ architecture Behavioral of project_reti_logiche is
     type state is (reset_state, read_state, compute_state, write_state, done1_state, done2_state, idle_state);
     type ram_type is array (9 downto 0) of std_logic_vector(7 downto 0);
     
-    signal CS, NS :         state := reset_state; -- NEXT STATE
+    --Current State e Next State
+    signal CS, NS :         state := reset_state;
     
-    signal temp_o_done   :     std_logic := '0';
-    signal temp_o_en     :     std_logic := '0';
-    signal temp_o_we     :     std_logic := '0';
-    signal temp_o_data   :     std_logic_vector(7 downto 0) := (others => '0');
---  signal temp_address  :     std_logic_vector(15 downto 0) := (others => '0');
+    --Next state output signals
+    signal next_o_done   :     std_logic := '0';
+    signal next_o_en     :     std_logic := '0';
+    signal next_o_we     :     std_logic := '0';
+    signal next_o_data   :     std_logic_vector(7 downto 0) := (others => '0');
     
     signal wz_bit        :     std_logic := '0';
     signal address       :     std_logic_vector(6 downto 0);
@@ -57,19 +58,10 @@ architecture Behavioral of project_reti_logiche is
     signal wz_offset     :     std_logic_vector(3 downto 0);
     signal coded_address :     std_logic_vector(7 downto 0);
     
-
+    --Vectors used to save the working zones address
     signal ram : ram_type;
     
---    signal ram_cell_0    :     std_logic_vector(7 downto 0);
---    signal ram_cell_1    :     std_logic_vector(7 downto 0);
---    signal ram_cell_2    :     std_logic_vector(7 downto 0);
---    signal ram_cell_3    :     std_logic_vector(7 downto 0);
---    signal ram_cell_4    :     std_logic_vector(7 downto 0);
---    signal ram_cell_5    :     std_logic_vector(7 downto 0);
---    signal ram_cell_6    :     std_logic_vector(7 downto 0);
---    signal ram_cell_7    :     std_logic_vector(7 downto 0);
---    signal ram_cell_8    :     std_logic_vector(7 downto 0);
-    
+    --Temporary functional signals
     signal counter : std_logic_vector(3 downto 0) := "0000";
     signal i       : integer := 0;
     signal offset  : integer := 5;
@@ -83,7 +75,6 @@ begin
         if( i_clk'event and i_clk = '1') then
             if( i_rst = '1') then
                 
---              temp_address   <= (others => '0');
                 o_data      <= (others => '0');
                 o_done      <= '0';
                 o_en        <= '0';
@@ -91,31 +82,32 @@ begin
                 CS          <= reset_state;
             
             elsif( not( NS = CS ) ) then
-            
---              o_address   <= temp_address;
-                o_data      <= temp_o_data;
-                o_done      <= temp_o_done;
-                o_en        <= temp_o_en;
-                o_we        <= temp_o_we;
+                
+                o_data      <= next_o_data;
+                o_done      <= next_o_done;
+                o_en        <= next_o_en;
+                o_we        <= next_o_we;
                 CS          <= NS;
+                
             end if;
         end if;
     end process;
     
     
             
-    STATE_OPS : process(CS, i_start, i_clk)
+    STATE_OPERATIONS : process(CS, i_clk)
     begin
     
-        if( i_clk'event and i_clk = '1' ) then
+        if( i_clk'event and i_clk = '1' and CS = NS ) then
+        
             case CS is
                 
                 when reset_state =>
-                    
+                        
+                        --waiting for the start signal
                         if( i_start = '1' ) then
-                            temp_o_en       <= '1';
-                            counter         <= "0000";
-    --                      temp_address    <= (others => '0');
+                            next_o_en       <= '1';
+                            counter         <= "0000";                          --reset of the counter in case of asynchronous reset during read_state
                             o_address       <= (others => '0');
                             NS              <= read_state;
                             
@@ -123,55 +115,46 @@ begin
                 
                 when read_state =>
                         
-                        case counter is
+                        case counter is                                         --every clock cycle increase the counter and the address but takes the input data from the previous cycle
                             when "0000" => 
-                                if( NS = read_state ) then
+                                if( NS = read_state ) then                      --to avoid the restart when the counter is reset at the end of case and NS = compute_state
                                     counter         <= "0001";
                                     o_address       <= "0000000000000001";
                                 end if;
                             when "0001" =>
---                              ram_cell_0      <= i_data;
-                                ram(0)          <= i_data;
+                                ram(0)          <= i_data;                      --counterintuitive but eplained above
                                 o_address       <= "0000000000000010";
                                 counter         <= "0010";
                             when "0010" =>
---                              ram_cell_1      <= i_data;
                                 ram(1)          <= i_data;
                                 o_address       <= "0000000000000011";
                                 counter         <= "0011";
                             when "0011" =>
---                              ram_2ell_2      <= i_data;
                                 ram(2)          <= i_data;
                                 o_address       <= "0000000000000100";
                                 counter         <= "0100";
                             when "0100" =>
---                              ram_cell_3      <= i_data;
                                 ram(3)          <= i_data;
                                 o_address       <= "0000000000000101";
                                 counter         <= "0101";
                             when "0101" =>
---                              ram_cell_4      <= i_data;
                                 ram(4)          <= i_data;
                                 o_address       <= "0000000000000110";
                                 counter         <= "0110";
                             when "0110" =>
---                              ram_cell_5      <= i_data;
                                 ram(5)          <= i_data;
                                 o_address       <= "0000000000000111";
                                 counter         <= "0111";
                             when "0111" =>
---                              ram_cell_6      <= i_data;
                                 ram(6)          <= i_data;
                                 o_address       <= "0000000000001000";
                                 counter         <= "1000";
                             when "1000" =>
---                              ram_cell_7      <= i_data;
                                 ram(7)          <= i_data;
                                 counter         <= "1001";
                             when "1001" =>
---                              ram_cell_8      <= i_data;
                                 ram(8)          <= i_data;
-                                address         <= i_data(6 downto 0);
+                                address         <= i_data(6 downto 0);              --most significant bit is always 0 and the addres is only 7bit coded
                                 counter         <= "0000";
                                 NS              <= compute_state;
                             when others =>
@@ -181,19 +164,18 @@ begin
                 
                 when compute_state =>
                     
-                        if( conv_integer(address) >= conv_integer(ram(i))) then
-                            offset  <= abs(conv_integer(address) - conv_integer(ram(i)));
-                        else
-                            offset  <= 5;
-                        end if;
+                        --a for loop is not used because a clock cycle is needed in every step to use offset signal:
+                        --as i_data above, offset take the value of the previous cycle
                         
-                        if( i > 0 and i < 9) then
+                        offset  <= conv_integer(address) - conv_integer(ram(i));
                         
-                            if( offset < 4 ) then
+                        if( 0 < i and i < 9 ) then
+                        
+                            if( 0 <= offset and offset < 4 ) then
                                 wz_bit          <= '1';
-                                wz_num          <= std_logic_vector(to_unsigned(i-1,3));
+                                wz_num          <= std_logic_vector(to_unsigned(i-1,3));    -- (i-1) because of the offset effect
                                 
-                                case to_unsigned(offset, 2) is
+                                case to_unsigned(offset, 2) is                              --Demux code
                                     when "00" =>
                                         wz_offset <= "0001";
                                     when "01" =>
@@ -206,10 +188,8 @@ begin
                             else
                                 wz_bit          <= wz_bit;
                             end if;
-                            
-                        end if;
-                        
-                        if( i = 9 ) then 
+                               
+                        elsif( i >= 9 ) then 
                         
                             if( wz_bit = '1' ) then 
                                 coded_address   <= wz_bit & wz_num & wz_offset;
@@ -219,45 +199,40 @@ begin
                             NS <= write_state;
                             
                         end if;
-                        
-                        if( i < 9 ) then
-                            i <= i+1;
+                        if( i < 9 ) then i <= i+1;                      --prevent the access to non-existing ram(10) 
                         end if;
                     
                 when write_state =>
                 
                         o_address       <= "0000000000001001";
-                        temp_o_data     <= coded_address;
-                        temp_o_we       <= '1';
-                        wz_bit          <= '0';
-                        wz_num          <= "000";
-                        wz_offset       <= "0000";
-                        i               <= 0;
+                        next_o_data     <= coded_address;
+                        next_o_we       <= '1';
+                        wz_bit          <= '0';                         --reset for the next computation
+                        wz_num          <= "000";                       -- "        "       "
+                        wz_offset       <= "0000";                      -- "        "       "
+                        i               <= 0;                           -- "        "       "
                         NS              <= done1_state;
                      
                 when done1_state => 
                 
-                        temp_o_done     <= '1';
---                        temp_o_en       <= '0';
-                        temp_o_we       <= '0';
+                        next_o_done     <= '1';
+                        next_o_en       <= '0';
+                        next_o_we       <= '0';
                         NS              <= done2_state;
                 
                 when done2_state =>
                 
                         if( i_start = '0' ) then
-                            temp_o_done <= '0';
+                            next_o_done <= '0';
                             NS          <= idle_state;
                         end if;
                 
                 when idle_state =>
-                
-                        if( i_start = '1' ) then
-                            temp_o_en       <= '1';
-    --                      temp_address    <= (others => '0');
-                            o_address       <= (others => '0');
-                            NS              <= read_state;
-                            
+                        
+                        if( i_start = '1') then 
+                            NS          <= compute_state;
                         end if;
+                        
                     
             end case;
         end if;
