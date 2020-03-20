@@ -44,7 +44,7 @@ architecture Behavioral of project_reti_logiche is
     type ram_type is array (9 downto 0) of std_logic_vector(7 downto 0);
     
     --Current State e Next State
-    signal CS, NS :         state := reset_state;
+    signal CS, NS        :     state := reset_state;
     
     --Next state output signals
     signal next_o_done   :     std_logic := '0';
@@ -62,9 +62,9 @@ architecture Behavioral of project_reti_logiche is
     signal ram : ram_type;
     
     --Temporary functional signals
-    signal counter : std_logic_vector(3 downto 0) := "0000";
-    signal i       : integer := 0;
-    signal offset  : integer := 5;
+    signal counter       : std_logic_vector(3 downto 0) := "0000";
+    signal i             : integer := 0;
+    signal offset        : integer := 5;
 
 ----------------------------------------------------------------------------------
 
@@ -72,23 +72,24 @@ begin
 
     UPDATE_STATE : process(i_rst, NS, i_clk)
     begin
-        if( i_clk'event and i_clk = '1') then
-            if( i_rst = '1') then
-                
-                o_data      <= (others => '0');
-                o_done      <= '0';
-                o_en        <= '0';
-                o_we        <= '0';
-                CS          <= reset_state;
+        
+        if( i_rst = '1') then
+            o_data      <= (others => '0');
+            o_done      <= '0';
+            o_en        <= '0';
+            o_we        <= '0';
+            CS          <= reset_state;
+        end if;
             
-            elsif( not( NS = CS ) ) then
+        if( i_clk'event and i_clk = '1') then    
+        
+            if( not( NS = CS ) ) then
                 
                 o_data      <= next_o_data;
                 o_done      <= next_o_done;
                 o_en        <= next_o_en;
                 o_we        <= next_o_we;
                 CS          <= NS;
-                
             end if;
         end if;
     end process;
@@ -104,13 +105,15 @@ begin
                 
                 when reset_state =>
                         
+                        
                         --waiting for the start signal
                         if( i_start = '1' ) then
-                            next_o_en       <= '1';
-                            counter         <= "0000";                          --reset of the counter in case of asynchronous reset during read_state
-                            o_address       <= (others => '0');
-                            NS              <= read_state;
-                            
+                            next_o_en   <= '1';
+                            counter     <= "0000";                          --reset of the counter in case of asynchronous reset during read_state
+                            o_address   <= (others => '0');
+                            NS          <= read_state;
+                        else
+                            NS          <= reset_state;
                         end if;
                 
                 when read_state =>
@@ -230,11 +233,16 @@ begin
                 when idle_state =>
                         
                         if( i_start = '1') then 
+                            next_o_en   <= '1';
                             NS          <= compute_state;
                         end if;
                         
-                    
             end case;
+            
+            if( i_rst = '1' ) then 
+                NS      <= reset_state;
+            end if;
+            
         end if;
         
     end process;
