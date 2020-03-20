@@ -14,7 +14,7 @@ codifica possono esistere multiple working-zone (Nwz).
 [Specifica completa e regole del progetto qui](../master/src/Specifica_e_Regole.pdf)
 
 ![Behavioral Simulation](../master/src/images/Behav_Simulation.jpg)   
-![Schematic](../master/src/images/Schematic.jpg)   
+![Schematic](../master/src/images/Schematic_Pre_Synthesis.jpg)   
 ![Implemented Design](../master/src/images/Implemented_Design.jpg)       
 
 ---------------------------------------------------
