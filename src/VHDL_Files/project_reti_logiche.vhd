@@ -70,7 +70,7 @@ architecture Behavioral of project_reti_logiche is
 
 begin
 
-    UPDATE_STATE : process(i_rst, NS, i_clk)
+    UPDATE_STATE : process(i_rst, NS)
     begin
         
         if( i_rst = '1') then
@@ -79,19 +79,14 @@ begin
             o_en        <= '0';
             o_we        <= '0';
             CS          <= reset_state;
+        elsif( not( NS = CS ) ) then    
+            o_data      <= next_o_data;
+            o_done      <= next_o_done;
+            o_en        <= next_o_en;
+            o_we        <= next_o_we;
+            CS          <= NS;
         end if;
-            
-        if( i_clk'event and i_clk = '1') then    
         
-            if( not( NS = CS ) ) then
-                
-                o_data      <= next_o_data;
-                o_done      <= next_o_done;
-                o_en        <= next_o_en;
-                o_we        <= next_o_we;
-                CS          <= NS;
-            end if;
-        end if;
     end process;
     
     
@@ -99,7 +94,7 @@ begin
     STATE_OPERATIONS : process(CS, i_clk)
     begin
     
-        if( i_clk'event and i_clk = '1' and CS = NS ) then
+        if( i_clk'event and i_clk = '1') then
         
             case CS is
                 
@@ -202,7 +197,7 @@ begin
                             NS <= write_state;
                             
                         end if;
-                        if( i < 9 ) then i <= i+1;                      --prevent the access to non-existing ram(10) 
+                        if( i < 9 ) then	i <= i+1;                      --prevent the access to non-existing ram(10)
                         end if;
                     
                 when write_state =>
@@ -214,6 +209,7 @@ begin
                         wz_num          <= "000";                       -- "        "       "
                         wz_offset       <= "0000";                      -- "        "       "
                         i               <= 0;                           -- "        "       "
+                        offset          <= 5;                           -- "        "       "
                         NS              <= done1_state;
                      
                 when done1_state => 
