@@ -79,7 +79,7 @@ begin
             o_en        <= '0';
             o_we        <= '0';
             CS          <= reset_state;
-        elsif( not( NS = CS ) ) then    
+        else --( not( NS = CS ) ) then    
             o_data      <= next_o_data;
             o_done      <= next_o_done;
             o_en        <= next_o_en;
@@ -105,6 +105,10 @@ begin
                         if( i_start = '1' ) then
                             next_o_en   <= '1';
                             counter     <= "0000";                          --reset of the counter in case of asynchronous reset during read_state
+                            i           <= 0;
+                            wz_bit      <= '0';
+                            wz_num      <= "000";
+                            wz_offset   <= "0000";
                             o_address   <= (others => '0');
                             NS          <= read_state;
                         else
@@ -197,7 +201,7 @@ begin
                             NS <= write_state;
                             
                         end if;
-                        if( i < 9 ) then	i <= i+1;                      --prevent the access to non-existing ram(10)
+                        if( i < 9 ) then    i <= i+1;                         --prevent the access to non-existing ram(10) 
                         end if;
                     
                 when write_state =>
