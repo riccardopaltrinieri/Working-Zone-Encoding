@@ -79,7 +79,7 @@ begin
             o_en        <= '0';
             o_we        <= '0';
             CS          <= reset_state;
-        else --( not( NS = CS ) ) then    
+        else
             o_data      <= next_o_data;
             o_done      <= next_o_done;
             o_en        <= next_o_en;
