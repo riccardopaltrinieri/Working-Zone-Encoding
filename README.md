@@ -14,9 +14,9 @@ codificato come one-hot.
 
 [Specifica completa e regole del progetto qui](../master/src/Specifica_e_Regole.pdf)
 
-![Behavioral Simulation](../master/src/images/Behav_Simulation.jpg)   
-![Schematic](../master/src/images/Schematic_Pre_Synthesis.jpg)   
-![Implemented Design](../master/src/images/Implemented_Design.jpg)       
+![Behavioral Simulation](../master/sources/images/Behav_Simulation.jpg)   
+![Schematic](../master/sources/images/Schematic_Pre_Synthesis.jpg)   
+![Implemented Design](../master/sources/images/Implemented_Design.jpg)       
 
 ---------------------------------------------------
 
